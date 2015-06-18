@@ -1,0 +1,18 @@
+Package: USAboundariesData
+Type: Package
+Title: Datasets for the 'USAboundaries' package
+Version: 0.1.0.9000
+Authors@R: c(person("Lincoln", "Mullen",
+    email = "lincoln@lincolnmullen.com",
+    role = c("aut", "cre")),
+    person("United States Census Bureau", role = "cph"))
+Description: Contains datasets, especially higher resolution boundary data, for
+    use in the 'USAboundaries' package.
+License: CC0
+LazyData: TRUE
+LazyDataCompression: xz
+URL: https://github.com/ropensci/USAboundariesData
+BugReports: https://github.com/ropensci/USAboundariesData/issues
+Depends:
+    R (>= 3.1.0)
+

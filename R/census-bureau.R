@@ -35,7 +35,7 @@
 #'   Codes}" pages for the details of this attribute data.
 #'
 #' @name census_boundaries
-#' @usage data(cb_2014_us_state_5m)
+#' @usage cb_2014_us_state_5m
 NULL
 
 #' @name   cb_2014_us_state_5m

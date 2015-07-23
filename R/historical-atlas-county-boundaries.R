@@ -8,7 +8,7 @@
 #'   description of all of the columns in the data frame, see the
 #'   \href{http://publications.newberry.org/ahcbp/downloads/united_states.html}{documentation
 #'    in the zip files} provided by AHCB. Some of the most important columns are
-#'   listed below.
+#'   listed in the details section of this documentation.
 #'
 #' @details \itemize{
 #'
@@ -30,7 +30,7 @@
 #'   See also the
 #'   \href{http://publications.newberry.org/ahcbp/project.html}{AHCB's about
 #'   page}.
-#' @usage data(hist_us_states)
+#' @usage hist_us_states
 "hist_us_states"
 
 #' Boundaries of counties in the United States of America, 1629--2000
@@ -44,7 +44,7 @@
 #'   description of all of the columns in the data frame, see the
 #'   \href{http://publications.newberry.org/ahcbp/downloads/united_states.html}{documentation
 #'    in the zip files} provided by AHCB. Some of the most important columns are
-#'   listed below.
+#'   listed in the details section of this documentation.
 #'
 #' @details \itemize{
 #'
@@ -68,5 +68,5 @@
 #'   See also the
 #'   \href{http://publications.newberry.org/ahcbp/project.html}{AHCB's about
 #'   page}.
-#' @usage data(hist_us_counties)
+#' @usage hist_us_counties
 "hist_us_counties"

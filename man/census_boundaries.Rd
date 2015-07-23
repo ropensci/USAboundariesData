@@ -15,7 +15,7 @@
 \alias{census_boundaries}
 \title{Cartographic boundary files from the U.S. Census Bureau}
 \usage{
-data(cb_2014_us_state_5m)
+cb_2014_us_state_5m
 }
 \description{
 The U.S. Census Bureau provides

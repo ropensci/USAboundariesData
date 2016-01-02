@@ -13,7 +13,7 @@ Description: Contains datasets, including higher resolution boundary data, for
     use in the 'USAboundaries' package. These datasets come from the U.S. Census
     Bureau and the Newberry Library's 'Historical Atlas of U.S. County
     Boundaries'.
-License: CC0
+License: CC BY-NC-SA 4.0
 LazyData: TRUE
 LazyDataCompression: xz
 URL: https://github.com/ropensci/USAboundariesData

@@ -3,6 +3,7 @@
 \docType{data}
 \name{hist_us_counties}
 \alias{hist_us_counties}
+\alias{hist_us_counties_hires}
 \title{Boundaries of counties in the United States of America, 1629--2000}
 \format{A \code{SpatialPolygonsDataFrame} with 17,727 elements}
 \source{

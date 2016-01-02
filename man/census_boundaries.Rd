@@ -34,13 +34,11 @@ The following objects are included:
 
 \describe{
 \item{cb_2014_us_cd114_500k}{Congressional district boundaries for the 114th Congress, 1:500k resolution.}
-\item{cb_2014_us_cd114_5m}{Congressional district boundaries for the 114th Congress, 1:5m resolution.}
+\item{cb_2014_us_cd114_20m}{Congressional district boundaries for the 114th Congress, 1:20m resolution.}
 \item{cb_2014_us_county_500k}{County boundaries, 1:500k resolution.}
-\item{cb_2014_us_county_5m}{County boundaries, 1:5m resolution.}
+\item{cb_2014_us_county_20m}{County boundaries, 1:20m resolution.}
 \item{cb_2014_us_state_500k}{State boundaries, 1:500k resolution.}
-\item{cb_2014_us_state_5m}{State boundaries, 1:5m resolution.}
-\item{cb_2014_us_ua10_500k}{Urban area boundaries, 1:500k resolution.}
-\item{cb_2014_us_zcta510_500k}{Zip code tabulation areas, 1:500k resolution.}
+\item{cb_2014_us_state_20m}{State boundaries, 1:20m resolution.}
 }
 }
 \references{

@@ -3,6 +3,7 @@
 \docType{data}
 \name{hist_us_states}
 \alias{hist_us_states}
+\alias{hist_us_states_hires}
 \title{Boundaries of states in the United States of America, 1783--2000}
 \format{A \code{SpatialPolygonsDataFrame} with 220 elements}
 \source{

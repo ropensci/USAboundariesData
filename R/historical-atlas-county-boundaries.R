@@ -70,3 +70,11 @@
 #'   page}.
 #' @usage hist_us_counties
 "hist_us_counties"
+
+#' @name  hist_us_counties_hires
+#' @rdname hist_us_counties
+NULL
+
+#' @name  hist_us_states_hires
+#' @rdname hist_us_states
+NULL

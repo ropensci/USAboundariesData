@@ -1,7 +1,7 @@
 Package: USAboundariesData
 Type: Package
 Title: Datasets for the 'USAboundaries' package
-Version: 0.2.0.9000
+Version: 0.2.0
 Authors@R: c(person("Lincoln", "Mullen",
     email = "lincoln@lincolnmullen.com",
     role = c("aut", "cre")),
@@ -9,7 +9,7 @@ Authors@R: c(person("Lincoln", "Mullen",
     The Newberry Library", role = "cph"),
     person("United States Census Bureau", role = "cph")
     )
-Description: Contains datasets, especially higher resolution boundary data, for
+Description: Contains datasets, including higher resolution boundary data, for
     use in the 'USAboundaries' package. These datasets come from the U.S. Census
     Bureau and the Newberry Library's 'Historical Atlas of U.S. County
     Boundaries'.

@@ -7,12 +7,14 @@ Authors@R: c(person("Lincoln", "Mullen",
     role = c("aut", "cre")),
     person("Dr. William M. Scholl Center for American History and Culture,
     The Newberry Library", role = "cph"),
-    person("United States Census Bureau", role = "cph")
+    person("United States Census Bureau", role = "cph"),
+    person("Erik", "Steiner", role = "ctb")
     )
 Description: Contains datasets, including higher resolution boundary data, for
     use in the 'USAboundaries' package. These datasets come from the U.S. Census
-    Bureau and the Newberry Library's 'Historical Atlas of U.S. County
-    Boundaries'.
+    Bureau, the Newberry Library's 'Historical Atlas of U.S. County
+    Boundaries', and Erik Steiner's 'United States Historical City Populations, 
+    1790-2010'.
 License: CC BY-NC-SA 4.0
 LazyData: TRUE
 LazyDataCompression: xz

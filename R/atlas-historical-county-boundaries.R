@@ -35,15 +35,22 @@
 #'   See also the
 #'   \href{http://publications.newberry.org/ahcbp/project.html}{AHCB's about
 #'   page}.
-#'
-#' @rdname ahcb-shapefiles
-"states_historical_lores"
+#' @name ahcb_boundaries
+#' @rdname ahcb_boundaries
+NULL
 
-#' @rdname ahcb-shapefiles
-"states_historical_hires"
+#' @name states_historical_lores
+#' @rdname ahcb_boundaries
+NULL
 
-#' @rdname ahcb-shapefiles
-"counties_historical_lores"
+#' @name states_historical_hires
+#' @rdname ahcb_boundaries
+NULL
 
-#' @rdname ahcb-shapefiles
-"counties_historical_hires"
+#' @name counties_historical_lores
+#' @rdname ahcb_boundaries
+NULL
+
+#' @name counties_historical_hires
+#' @rdname ahcb_boundaries
+NULL

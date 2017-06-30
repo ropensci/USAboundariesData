@@ -1,0 +1,7 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+data-raw/congressional-districts
+data-raw/historical/historical.topojson
+data-raw/temp

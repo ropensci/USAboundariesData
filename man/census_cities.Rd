@@ -4,7 +4,7 @@
 \name{census_cities}
 \alias{census_cities}
 \title{Historical population data for U.S. cities}
-\format{An object of class \code{sf} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 62198 rows and 12 columns.}
+\format{An object of class \code{sf} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 62198 rows and 13 columns.}
 \usage{
 census_cities
 }

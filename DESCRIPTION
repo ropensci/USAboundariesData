@@ -4,7 +4,8 @@ Title: Datasets for the 'USAboundaries' package
 Version: 0.3.0.9000
 Authors@R: c(person("Lincoln", "Mullen",
     email = "lincoln@lincolnmullen.com",
-    role = c("aut", "cre")),
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0001-5103-6917")),
     person("Dr. William M. Scholl Center for American History and Culture,
     The Newberry Library", role = "cph"),
     person("United States Census Bureau", role = "cph"),

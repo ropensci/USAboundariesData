@@ -4,15 +4,15 @@
 \name{census_cities}
 \alias{census_cities}
 \title{Historical population data for U.S. cities}
-\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 62224 rows and 15 columns.}
+\format{An object of class \code{sf} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 62198 rows and 12 columns.}
 \usage{
 census_cities
 }
 \description{
-This data frame contains historical population data for U.S. cities. The data
-is drawn from the U.S. Census. The data was compiled by Erik Steiner and
-Jason Heppler at the Center for Spatial and Textual Analysis, Stanford
-University. See their
+This \code{sf} object contains historical population data for U.S. cities
+with latitudes and longitudes of the cities. The data is drawn from the U.S.
+Census. The data was compiled by Erik Steiner and Jason Heppler at the Center
+for Spatial and Textual Analysis, Stanford University. See their
 \href{https://github.com/cestastanford/historical-us-city-populations}{description
 of the data} for a fuller accounting of how the data was gathered.
 }

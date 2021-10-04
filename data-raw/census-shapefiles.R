@@ -69,4 +69,4 @@ use_data(states_contemporary_hires,
          zipcodes,
          compress = "xz", overwrite = TRUE)
 
-file.rename("data/states_contemporary_lores.rda", "../USAboundaries/data/states_contemporary_lores.rda")
+file.copy("data/states_contemporary_lores.rda", "../USAboundaries/data/states_contemporary_lores.rda")

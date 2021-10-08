@@ -1,7 +1,7 @@
 Package: USAboundariesData
 Type: Package
 Title: Datasets for the 'USAboundaries' package
-Version: 0.3.2
+Version: 0.4.0
 Date: 2021-10-08
 Authors@R: c(person("Lincoln", "Mullen",
     email = "lincoln@lincolnmullen.com",

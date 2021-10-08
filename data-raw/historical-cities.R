@@ -37,8 +37,8 @@ census_cities <- read_csv("data-raw/1790-2010_MASTER.csv",
   select(city, state_name, state_abbr, County, County_Name, everything()) %>%
   st_as_sf(coords = c("longitude", "latitude"))
 
-load("data/states_contemporary_lores.rda")
-boundaries <- states_contemporary_lores %>%
+load("data/states_contemporary_hires.rda")
+boundaries <- states_contemporary_hires %>%
   st_union()
 
 st_crs(census_cities) <- st_crs(boundaries)

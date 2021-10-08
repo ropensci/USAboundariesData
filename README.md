@@ -3,6 +3,7 @@
 
 # USAboundariesData
 
+[![R-CMD-check](https://github.com/ropensci/USAboundariesData/workflows/R-CMD-check/badge.svg)](https://github.com/ropensci/USAboundariesData/actions)
 [![Travis-CI Build
 Status](https://travis-ci.org/ropensci/USAboundariesData.svg?branch=master)](https://travis-ci.org/ropensci/USAboundariesData)
 

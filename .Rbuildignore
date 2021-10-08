@@ -9,3 +9,4 @@
 ^README-.*\.png$
 ^Makefile$
 ^_pkgdown\.yml$
+^\.github$

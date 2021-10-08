@@ -3,8 +3,7 @@
 \docType{package}
 \name{USAboundariesData}
 \alias{USAboundariesData}
-\alias{USAboundariesData-package}
 \title{USAboundariesData}
 \description{
-USAboundariesData
+Provides datasets for the 'USABoundaries' package.
 }

@@ -1,5 +1,7 @@
 #' USAboundariesData
 #'
+#' Provides datasets for the 'USABoundaries' package.
+#'
 #' @name USAboundariesData
 #' @docType package
 NULL

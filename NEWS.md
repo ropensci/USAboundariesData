@@ -1,8 +1,6 @@
 # USAboundariesData 0.4.0
 
 - Update contemporary census data from 2016 to 2020.
-- Remove the `us_boundaries()` function which was a complicated wrapper around
-  better functions.
 
 # USAboundariesData 0.3.2
 

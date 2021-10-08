@@ -37,7 +37,8 @@ census_cities <- read_csv("data-raw/1790-2010_MASTER.csv",
   select(city, state_name, state_abbr, County, County_Name, everything()) %>%
   st_as_sf(coords = c("longitude", "latitude"))
 
-boundaries <- USAboundaries::states_contemporary_lores %>%
+load("data/states_contemporary_lores.rda")
+boundaries <- states_contemporary_lores %>%
   st_union()
 
 st_crs(census_cities) <- st_crs(boundaries)
@@ -45,4 +46,4 @@ st_crs(census_cities) <- st_crs(boundaries)
 colnames(census_cities) <- tolower(colnames(census_cities))
 colnames(census_cities) <- str_replace_all(colnames(census_cities), " ", "_")
 
-devtools::use_data(census_cities, overwrite = TRUE, compress = "xz")
+usethis::use_data(census_cities, overwrite = TRUE, compress = "xz")

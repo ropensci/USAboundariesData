@@ -62,6 +62,11 @@ NULL
 #' @rdname census_boundaries
 NULL
 
+#' @name states_contemporary_lores
+#' @rdname census_boundaries
+NULL
+
+
 #' @name zipcodes
 #' @rdname census_boundaries
 NULL

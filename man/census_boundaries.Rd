@@ -7,6 +7,7 @@
 \alias{counties_contemporary_hires}
 \alias{counties_contemporary_lores}
 \alias{states_contemporary_hires}
+\alias{states_contemporary_lores}
 \alias{zipcodes}
 \title{Cartographic boundary files from the U.S. Census Bureau}
 \description{

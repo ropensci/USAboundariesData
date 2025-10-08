@@ -2,14 +2,13 @@ library(tidyverse)
 library(sf)
 library(stringr)
 library(USAboundaries)
-library(devtools)
 
-zipfiles <- c("http://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_state_20m.zip",
-              "http://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_state_500k.zip",
-              "http://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_county_20m.zip",
-              "http://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_county_500k.zip",
-              "http://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_cd116_20m.zip",
-              "http://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_cd116_500k.zip",
+zipfiles <- c(#"http://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_20m.zip",
+              #"http://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_500k.zip",
+              "http://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_county_20m.zip",
+              "http://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_county_500k.zip",
+              "http://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_cd119_20m.zip",
+              "http://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_cd119_500k.zip",
               "http://www2.census.gov/geo/tiger/GENZ2019/shp/cb_2019_us_zcta510_500k.zip")
 
 zip_dir <- "data-raw/temp/census-shapefiles/"
@@ -44,12 +43,12 @@ cleanup_shp <- function(f, join = TRUE) {
   shp
 }
 
-states_contemporary_lores <- cleanup_shp("cb_2020_us_state_20m.shp")
-states_contemporary_hires <- cleanup_shp("cb_2020_us_state_500k.shp")
-counties_contemporary_lores <- cleanup_shp("cb_2020_us_county_20m.shp")
-counties_contemporary_hires <- cleanup_shp("cb_2020_us_county_500k.shp")
-congress_contemporary_lores <- cleanup_shp("cb_2020_us_cd116_20m.shp")
-congress_contemporary_hires <- cleanup_shp("cb_2020_us_cd116_500k.shp")
+states_contemporary_lores <- cleanup_shp("cb_2024_us_state_20m.shp")
+states_contemporary_hires <- cleanup_shp("cb_2024_us_state_500k.shp")
+counties_contemporary_lores <- cleanup_shp("cb_2024_us_county_20m.shp")
+counties_contemporary_hires <- cleanup_shp("cb_2024_us_county_500k.shp")
+congress_contemporary_lores <- cleanup_shp("cb_2024_us_cd119_20m.shp")
+congress_contemporary_hires <- cleanup_shp("cb_2024_us_cd119_500k.shp")
 zcta <- cleanup_shp("cb_2019_us_zcta510_500k.shp", join = FALSE)
 zipcodes <- zcta %>%
   st_transform(3857) %>%
@@ -58,8 +57,8 @@ zipcodes <- zcta %>%
   select(zipcode, everything()) %>%
   st_transform(4326)
 
-use_data(states_contemporary_hires,
-         states_contemporary_lores,
+usethis::use_data(#states_contemporary_hires,
+         #states_contemporary_lores,
          counties_contemporary_hires,
          counties_contemporary_lores,
          congress_contemporary_hires,

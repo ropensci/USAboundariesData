@@ -1,3 +1,6 @@
+# USAboundariesData 0.5.0
+- Update contemporary census data from 2020 to 2024.
+
 # USAboundariesData 0.4.0
 
 - Update contemporary census data from 2016 to 2020.

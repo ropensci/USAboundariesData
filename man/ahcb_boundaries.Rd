@@ -41,7 +41,7 @@ The high resolution boundaries have been generalized to a .01 degree
   miles). See the AHCB website for higher-resolution shapefiles.
 
   See the
-  \href{https://github.com/ropensci/USAboundaries}{USAboundaries
+  \href{https://docs.ropensci.org/USAboundaries}{USAboundaries
   package} for low-resolution state boundaries and for the functions to
   access this data.
 }

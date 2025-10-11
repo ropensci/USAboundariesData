@@ -30,13 +30,13 @@ walk(zipfiles, function(x) {
 })
 
 cleanup_shp <- function(f, join = TRUE) {
-  shp <- f %>%
-    str_c(zip_dir, .) %>%
-    st_read(stringsAsFactors = FALSE) %>%
+  shp <- f |>
+    str_c(zip_dir, .) |>
+    st_read(stringsAsFactors = FALSE) |>
     st_transform(4326)
 
   if (join) {
-    shp <- shp %>%
+    shp <- shp |>
       left_join(USAboundaries::state_codes, by = c("STATEFP" = "state_code"))
   }
 
@@ -54,11 +54,11 @@ counties_contemporary_hires <- cleanup_shp("cb_2024_us_county_500k.shp")
 congress_contemporary_lores <- cleanup_shp("cb_2024_us_cd119_20m.shp")
 congress_contemporary_hires <- cleanup_shp("cb_2024_us_cd119_500k.shp")
 zcta <- cleanup_shp("cb_2019_us_zcta510_500k.shp", join = FALSE)
-zipcodes <- zcta %>%
-  st_transform(3857) %>%
-  st_centroid() %>%
-  mutate(zipcode = zcta5ce10) %>%
-  select(zipcode, everything()) %>%
+zipcodes <- zcta |>
+  st_transform(3857) |>
+  st_centroid() |>
+  mutate(zipcode = zcta5ce10) |>
+  select(zipcode, everything()) |>
   st_transform(4326)
 
 usethis::use_data(

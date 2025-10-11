@@ -24,7 +24,6 @@ test_that("states_historical_lores has correct column names", {
   expect_equal(names(states_historical_hires), expected_cols)
 })
 
-
 test_that("counties_historical_lores has correct column names", {
   expected_cols <- c(
     "id_num",

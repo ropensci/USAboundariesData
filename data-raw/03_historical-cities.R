@@ -21,30 +21,30 @@ census_cities <- read_csv(
     `Place Type` = col_character(),
     County_Name = col_character()
   )
-) %>%
-  gather(year, population, 5:27, convert = TRUE) %>%
-  select(-ID, -CityST) %>%
-  select(city = City, state_abbr = ST, everything()) %>%
-  filter(population > 0) %>%
+) |>
+  gather(year, population, 5:27, convert = TRUE) |>
+  select(-ID, -CityST) |>
+  select(city = City, state_abbr = ST, everything()) |>
+  filter(population > 0) |>
   mutate(
     STPLFIPS_2010 = if_else(STPLFIPS_2010 == "0", NA_character_, STPLFIPS_2010)
-  ) %>%
-  mutate(Name_2010 = if_else(Name_2010 == "0", NA_character_, Name_2010)) %>%
+  ) |>
+  mutate(Name_2010 = if_else(Name_2010 == "0", NA_character_, Name_2010)) |>
   mutate(
     longitude = if_else(!is.na(LON), LON, LON_BING),
     latitude = if_else(!is.na(LAT), LAT, LAT_BING)
-  ) %>%
-  filter(!near(longitude, 0), !near(latitude, 0)) %>%
-  select(-LON, -LAT, -LON_BING, -LAT_BING) %>%
+  ) |>
+  filter(!near(longitude, 0), !near(latitude, 0)) |>
+  select(-LON, -LAT, -LON_BING, -LAT_BING) |>
   left_join(
     select(USAboundaries::state_codes, state_name, state_abbr),
     by = "state_abbr"
-  ) %>%
-  select(city, state_name, state_abbr, County, County_Name, everything()) %>%
+  ) |>
+  select(city, state_name, state_abbr, County, County_Name, everything()) |>
   st_as_sf(coords = c("longitude", "latitude"))
 
 load("data/states_contemporary_hires.rda")
-boundaries <- states_contemporary_hires %>%
+boundaries <- states_contemporary_hires |>
   st_union()
 
 st_crs(census_cities) <- st_crs(boundaries)

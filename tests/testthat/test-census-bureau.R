@@ -77,12 +77,18 @@ test_that("states_contemporary has correct column names", {
   )
   expect_equal(names(states_contemporary_hires), expected_cols)
 
-  expected_states <- subset(states_contemporary_hires, jurisdiction_type == "state")
+  expected_states <- subset(
+    states_contemporary_hires,
+    jurisdiction_type == "state"
+  )
   expect_equal(nrow(expected_states), 50)
 
   expect_equal(names(states_contemporary_lores), expected_cols)
 
-  expected_states <- subset(states_contemporary_lores, jurisdiction_type == "state")
+  expected_states <- subset(
+    states_contemporary_lores,
+    jurisdiction_type == "state"
+  )
   expect_equal(nrow(expected_states), 50)
 })
 

@@ -26,12 +26,12 @@ counties_historical_hires <- read_sf(
 
 prepare_shapefile <- function(shp) {
   colnames(shp) <- str_to_lower(colnames(shp))
-  shp %>%
-    mutate(state_abbr = str_to_upper(str_sub(id, 1, 2))) %>%
-    left_join(USAboundaries::state_codes, by = "state_abbr") %>%
+  shp |>
+    mutate(state_abbr = str_to_upper(str_sub(id, 1, 2))) |>
+    left_join(USAboundaries::state_codes, by = "state_abbr") |>
     mutate(
       state_abbr = if_else(is.na(state_name), NA_character_, state_abbr)
-    ) %>%
+    ) |>
     select(-jurisdiction_type)
 }
 

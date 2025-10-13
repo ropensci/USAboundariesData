@@ -2,6 +2,8 @@ library(tidyverse)
 library(sf)
 library(stringr)
 
+# TODO USAboundaries::states_contemporary_lores keep here?
+
 zipfiles <- c(
   "http://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_20m.zip",
   "http://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_500k.zip",

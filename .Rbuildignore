@@ -10,3 +10,6 @@
 ^Makefile$
 ^_pkgdown\.yml$
 ^\.github$
+^[.]?air[.]toml$
+^\.vscode$
+^codemeta.json$

@@ -6,7 +6,7 @@
 #' boundaries cover the period from 1629 to 2000. The attribute data includes of
 #' the changes to the boundaries and the dates with which they valid. For a full
 #' description of all of the columns in the data frame, see the
-#' \href{http://publications.newberry.org/ahcbp/downloads/united_states.html}{documentation
+#' \href{http://publications.newberry.org/ahcb/downloads/united_states.html}{documentation
 #' in the zip files} provided by AHCB. The datasets are objects of class
 #' \code{sf} from the \href{https://cran.r-project.org/package=sf}{sf package}.
 #' They are intended to be used with the functions in the \code{USAboundaries}
@@ -22,7 +22,7 @@
 #'   miles). See the AHCB website for higher-resolution shapefiles.
 #'
 #'   See the
-#'   \href{https://cran.r-project.org/package=USAboundaries}{USAboundaries
+#'   \href{https://docs.ropensci.org/USAboundaries}{USAboundaries
 #'   package} for low-resolution state boundaries and for the functions to
 #'   access this data.
 #'
@@ -33,7 +33,7 @@
 #'   Library, Chicago (2010), \url{http://publications.newberry.org/ahcbp/}.
 #'
 #'   See also the
-#'   \href{http://publications.newberry.org/ahcbp/project.html}{AHCB's about
+#'   \href{http://publications.newberry.org/ahcb/project.html}{AHCB's about
 #'   page}.
 #' @name ahcb_boundaries
 #' @rdname ahcb_boundaries

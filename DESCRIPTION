@@ -1,16 +1,17 @@
 Package: USAboundariesData
 Type: Package
 Title: Datasets for the 'USAboundaries' package
-Version: 0.4.0
-Date: 2021-10-08
+Version: 0.5.0
+Date: 2025-10-08
 Authors@R: c(person("Lincoln", "Mullen",
     email = "lincoln@lincolnmullen.com",
-    role = c("aut", "cre"),
+    role = c("aut"),
     comment = c(ORCID = "0000-0001-5103-6917")),
     person("Dr. William M. Scholl Center for American History and Culture,
     The Newberry Library", role = "cph"),
     person("United States Census Bureau", role = "cph"),
-    person("Erik", "Steiner", role = "ctb")
+    person("Erik", "Steiner", role = "ctb"),
+    person("Jacci", "Ziebert", email = "jacciziebert@gmail.com", role = "cre")
     )
 Description: Contains datasets, including higher resolution boundary data, for
     use in the 'USAboundaries' package. These datasets come from the U.S. Census
@@ -20,9 +21,12 @@ Description: Contains datasets, including higher resolution boundary data, for
 License: CC BY-NC-SA 4.0
 LazyData: TRUE
 LazyDataCompression: xz
-URL: http://lincolnmullen.com/software/usaboundaries/data/, https://github.com/ropensci/USAboundariesdata
+URL: https://docs.ropensci.org/USAboundaries, https://github.com/ropensci/USAboundariesdata
 BugReports: https://github.com/ropensci/USAboundariesData/issues
 Depends:
-    R (>= 3.1.0)
+    R (>= 3.5)
 Encoding: UTF-8
-RoxygenNote: 7.1.2
+RoxygenNote: 7.3.3
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

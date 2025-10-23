@@ -73,7 +73,7 @@ usethis::use_data(
   overwrite = TRUE
 )
 
-file.copy("data/states_contemporary_lores.rda", "../USAboundaries/data/states_contemporary_lores.rda", overwrite = TRUE)
+# file.copy("data/states_contemporary_lores.rda", "../USAboundaries/data/states_contemporary_lores.rda", overwrite = TRUE)
 
 
 

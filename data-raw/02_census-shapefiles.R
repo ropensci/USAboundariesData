@@ -2,8 +2,6 @@ library(tidyverse)
 library(sf)
 library(stringr)
 
-# TODO USAboundaries::states_contemporary_lores keep here?
-
 zipfiles <- c(
   "http://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_20m.zip",
   "http://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_500k.zip",
@@ -32,9 +30,9 @@ walk(zipfiles, function(x) {
 })
 
 cleanup_shp <- function(f, join = TRUE) {
-  shp <- f |>
-    str_c(zip_dir, .) |>
-    st_read(stringsAsFactors = FALSE) |>
+  shp <-
+    str_c(zip_dir, f) |>
+    st_read(dsn = _, stringsAsFactors = FALSE) |>
     st_transform(4326)
 
   if (join) {
@@ -65,12 +63,18 @@ zipcodes <- zcta |>
 
 usethis::use_data(
   states_contemporary_hires,
-  states_contemporary_lores,
+  # states_contemporary_lores,
   counties_contemporary_hires,
   counties_contemporary_lores,
   congress_contemporary_hires,
   congress_contemporary_lores,
   zipcodes,
   compress = "xz",
+  overwrite = TRUE
+)
+
+file.copy(
+  "data/states_contemporary_lores.rda",
+  "../USAboundaries/data/states_contemporary_lores.rda",
   overwrite = TRUE
 )
